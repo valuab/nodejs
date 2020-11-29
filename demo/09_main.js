@@ -4,3 +4,8 @@
  * @
 # Description: 
  */
+
+
+const md = require("./09_global")
+console.log(md.test)
+console.log(test)
