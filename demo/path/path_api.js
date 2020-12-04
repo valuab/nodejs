@@ -14,6 +14,6 @@ for (let i in path) {
  * resolve normalize join isAbsolute
  * dirname basename extname
  * format parse
- * sep delimiter win32 posix
+ * sep delimiter win32 posix //针对系统
  * relative toNamespacedPath _makeLong
  */
