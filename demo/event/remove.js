@@ -19,24 +19,24 @@ function fn1() {
 function fn2() {
     console.log('fn2');
 }
+
 function fn3() {
     console.log('fn3');
 }
 
-event.on('test',fn1)
-event.on('test',fn2)
+event.on('test', fn1)
+event.on('test', fn2)
 
-setInterval(()=>{
+setInterval(() => {
     event.emit('test')
-},500)
+}, 500)
 
 // 移除
-setTimeout(()=>{
-    event.removeListener('test',fn2) //删除单个绑定监听事件
-    event.on('test',fn3)
-},1500)
+setTimeout(() => {
+    event.removeListener('test', fn2) //删除单个绑定监听事件
+    event.on('test', fn3)
+}, 1500)
 
-setTimeout(()=>{
+setTimeout(() => {
     event.removeAllListeners('test') //删除所有绑定监听事件
-},5500)
-
+}, 5500)
